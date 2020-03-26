@@ -2,10 +2,12 @@
 
 echo $0
 EXECSTR=`echo $0 |rev|cut -d/ -f1|rev`
-if [ $EXECSTR = "linkA" ] ; then
+if [ $EXECSTR = "start" ] ; then
         ACTION="A"
-elif [ $EXECSTR  = "linkB" ] ; then
+	echo "start aaaa"
+elif [ $EXECSTR  = "stop" ] ; then
         ACTION="B"
+	echo "stop bbbb"
 fi
 
 # Message 
